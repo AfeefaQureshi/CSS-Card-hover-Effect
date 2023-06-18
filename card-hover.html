@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		.main{
+			display: grid;
+			height: 50vmax;
+			place-items: center;
+		}
+
+		.main #D1,#D2,#D3,#D4{
+			width: 190px;
+			height: 254px;
+			position: absolute;
+			transition: .3s ease-in-out;
+			cursor: pointer;
+			border-radius: 10px;
+			box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.3);
+
+		}
+	
+		.main:hover #D1{
+			transform: translateX(-100px) rotate(-40deg);
+		}
+		.main:hover #D2{
+			transform: translateX(-50px) rotate(-30deg);
+		}
+		.main:hover #D3{
+			transform: translateX(0) rotate(-20deg);
+		}
+		.main:hover #D4{
+			transform: translateX(50px) rotate(-10deg);
+		}
+		#D1:hover{
+			transform: translateX(-150px) rotate(0deg) !important;
+		}
+		#D2:hover{
+			transform: translateX(-100px) rotate(0deg) !important;
+		}
+		#D3:hover{
+			transform: translateX(-50px) rotate(0deg) !important;
+		}
+		#D4:hover{
+			transform: translateX(50px) rotate(0deg) !important;
+		}
+
+
+		#D1{
+			background:url("1.jpg") no-repeat;
+			background-size: cover;
+		}
+		#D2{
+			background:url("images.jpg") no-repeat;
+			background-size: cover;
+		}
+		#D3{
+			background:url("2.jpg") no-repeat;
+			background-size: cover;
+		}
+		#D4{
+			background:url("R.jpg") no-repeat;
+			background-size: cover;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<div class="main">
+	<div id="D1"></div>
+	<div id="D2"></div>
+	<div id="D3"></div>
+	<div id="D4"></div>
+</div>
+
+</body>
+</html>
